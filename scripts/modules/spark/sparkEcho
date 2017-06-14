@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+sparkEcho ()
+{
+    if [ "X$1" = "X-n" ]; then
+        shift
+        printf "%s" "$*"
+    else
+        printf "%s\n" "$*"
+    fi
+}
